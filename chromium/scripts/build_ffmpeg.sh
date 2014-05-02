@@ -424,9 +424,9 @@ fi
 add_flag_chromium --disable-error-resilience
 
 # Google Chrome & ChromeOS specific configuration.
-add_flag_chrome --enable-decoder=aac,h264,mp3
-add_flag_chrome --enable-demuxer=mp3,mov
-add_flag_chrome --enable-parser=aac,h264,mpegaudio
+add_flag_common --enable-decoder=aac,h264,mp3,ac3
+add_flag_common --enable-demuxer=mp3,mov,ac3
+add_flag_common --enable-parser=aac,h264,mpegaudio,ac3
 
 # ChromiumOS specific configuration.
 # Warning: do *NOT* add avi, aac, h264, mp3, mp4, amr*
